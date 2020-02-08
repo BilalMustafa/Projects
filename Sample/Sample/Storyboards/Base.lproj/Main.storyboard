@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8S3-U6-jpX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pJd-Zg-dTi">
+            <objects>
+                <viewController id="4pC-wh-77b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VUB-ZX-qQb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LME-Ak-D6m">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6hv-wH-TXI"/>
+                                    <constraint firstAttribute="height" constant="100" id="reT-Dm-2Z5"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="" id="Zmo-Ks-5nf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LME-Ak-D6m" firstAttribute="centerY" secondItem="VUB-ZX-qQb" secondAttribute="centerY" id="5XG-EJ-82S"/>
+                            <constraint firstItem="LME-Ak-D6m" firstAttribute="centerX" secondItem="VUB-ZX-qQb" secondAttribute="centerX" id="ZHF-Mb-4ro"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LK6-kD-kit"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U45-6B-weq">
+                        <barButtonItem key="rightBarButtonItem" image="square.and.arrow.up" catalog="system" id="VcR-QC-BKV"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wh2-Yp-dEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="110"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujy-PS-aCh">
+                                <rect key="frame" x="157" y="413" width="100" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1dY-zn-i5x"/>
+                                    <constraint firstAttribute="height" constant="70" id="Oy8-RL-1GW"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="r9g-b9-QvZ" kind="show" id="ydq-Z3-TRv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ujy-PS-aCh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nRM-MH-C4V"/>
+                            <constraint firstItem="ujy-PS-aCh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="svn-bW-JVv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rb8-ZN-DBo">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.down.fill" catalog="system" id="tXx-il-Hea"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2647.826086956522" y="112.5"/>
+        </scene>
+        <!--Side-->
+        <scene sceneID="9NJ-LD-oZA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Side" id="r9g-b9-QvZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="c5b-Uo-GKg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQM-Iq-p7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3167.3913043478265" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tdx-og-ER5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8S3-U6-jpX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NgX-FW-b7X">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4pC-wh-77b" kind="relationship" relationship="rootViewController" id="8jK-FA-2eo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ne1-7L-Tey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.91304347826099" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.down.fill" catalog="system" width="60" height="64"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+    </resources>
+</document>

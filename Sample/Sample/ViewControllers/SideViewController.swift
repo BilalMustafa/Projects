@@ -12,7 +12,9 @@ class SideViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Search"
+        self.parent?.title = "Search"
+        let rightButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(action))
+        self.parent?.navigationItem.rightBarButtonItem = rightButton
 
     }
     @objc func action(){
